@@ -27,7 +27,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /** One fixed provider per credential state, with provider-specific coordinates and caches. */
-final class MapView extends View {
+final class MapView extends View implements OsmMapAccess.Listener {
     interface OnStationTapListener {
         void onStationTap(NearbyStation station);
     }
@@ -86,17 +86,51 @@ final class MapView extends View {
     /** 当前整张地图只使用一个瓦片源，避免 GCJ 高德瓦片与 WGS OSM 瓦片混绘。 */
     private boolean mapKeyBound = AppSettings.hasMapKey();
     private volatile String activeProvider = mapKeyBound ? "amap" : "osm";
+    private View availabilityTarget;
+    private double[] deferredFocus;
+    private volatile boolean loadTilesInForeground;
+
+    /** Collapse the complete map card, including its overlaid controls, when OSM is unreachable. */
+    void setAvailabilityTarget(View target) {
+        availabilityTarget = target;
+        updateMapVisibility();
+    }
+
+    @Override public void onOsmAvailabilityChanged() { updateMapVisibility(); }
+
+    private void updateMapVisibility() {
+        boolean visible = PrivacyNotice.locationAllowed()
+                && (!"osm".equals(activeProvider) || OsmMapAccess.available());
+        if (availabilityTarget != null) availabilityTarget.setVisibility(visible ? VISIBLE : GONE);
+        if (!visible) queuedViewport = "";
+        updatePulse();
+        if (visible) invalidate();
+    }
+
+    private void updatePulse() {
+        loadTilesInForeground = isAttachedToWindow() && isShown() && getWindowVisibility() == VISIBLE;
+        if (pulseAnimator == null) return;
+        if (hasUserLocation && loadTilesInForeground) {
+            if (!pulseAnimator.isStarted()) pulseAnimator.start();
+        } else {
+            pulseAnimator.cancel();
+        }
+    }
 
     void updateMapCredential() {
         boolean bound = AppSettings.hasMapKey();
-        if (bound == mapKeyBound) return;
-        mapKeyBound = bound;
-        activeProvider = bound ? "amap" : "osm";
-        memoryCache.clear();
-        failedTiles.clear();
-        tileSources.clear();
-        queuedViewport = "";
-        invalidate();
+        if (bound != mapKeyBound) {
+            mapKeyBound = bound;
+            activeProvider = bound ? "amap" : "osm";
+            memoryCache.clear();
+            failedTiles.clear();
+            tileSources.clear();
+            queuedViewport = "";
+        }
+        if ("osm".equals(activeProvider) && isAttachedToWindow() && getWindowVisibility() == VISIBLE) {
+            OsmMapAccess.refresh(getContext());
+        }
+        updateMapVisibility();
     }
 
     private List<NearbyStation> stations = new ArrayList<>();
@@ -206,17 +240,19 @@ final class MapView extends View {
         this.userLat = lat;
         this.userLon = lon;
         this.hasUserLocation = true;
-        if (isAttachedToWindow() && !pulseAnimator.isStarted()) pulseAnimator.start();
+        updatePulse();
         postInvalidate();
     }
 
     void centerOn(double lat, double lon) {
+        deferredFocus = null;
         this.centerLat = lat;
         this.centerLon = lon;
         postInvalidate();
     }
 
     void centerOn(double lat, double lon, int targetZoom) {
+        deferredFocus = null;
         this.zoom = clampZoom(targetZoom);
         this.centerLat = lat;
         this.centerLon = lon;
@@ -256,10 +292,12 @@ final class MapView extends View {
                             int paddingDp) {
         final int width = getWidth();
         final int height = getHeight();
-        if (width <= 0 || height <= 0) {
-            post(() -> focusUserAndTarget(lat, lon, targetLat, targetLon, paddingDp));
+        if (width <= 0 || height <= 0 || !isShown()) {
+            // A hidden map has no layout. Save one latest request instead of posting an endless retry loop.
+            deferredFocus = new double[]{lat, lon, targetLat, targetLon, paddingDp};
             return;
         }
+        deferredFocus = null;
         centerLat = lat;
         centerLon = lon;
         if (targetLat == 0 || targetLon == 0) {
@@ -358,6 +396,7 @@ final class MapView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        if ("osm".equals(activeProvider) && !OsmMapAccess.available()) return;
         double[] centerPixel = pxWgs(centerLat, centerLon);
         int left = (int) Math.floor((centerPixel[0] - getWidth() / 2.0) / TILE_SIZE);
         int top = (int) Math.floor((centerPixel[1] - getHeight() / 2.0) / TILE_SIZE);
@@ -613,11 +652,38 @@ final class MapView extends View {
             queuedViewport = "";
             synchronized (pendingTiles) { pendingTiles.clear(); }
         }
-        if (hasUserLocation) pulseAnimator.start();
+        OsmMapAccess.observe(this);
+        updateMapCredential();
+    }
+
+    @Override protected void onVisibilityChanged(View changedView, int visibility) {
+        super.onVisibilityChanged(changedView, visibility);
+        updatePulse();
+        if (visibility == VISIBLE && deferredFocus != null) post(this::applyDeferredFocus);
+    }
+
+    @Override protected void onSizeChanged(int width, int height, int oldWidth, int oldHeight) {
+        super.onSizeChanged(width, height, oldWidth, oldHeight);
+        applyDeferredFocus();
+    }
+
+    private void applyDeferredFocus() {
+        if (deferredFocus == null || !isShown() || getWidth() <= 0 || getHeight() <= 0) return;
+        double[] focus = deferredFocus;
+        focusUserAndTarget(focus[0], focus[1], focus[2], focus[3], (int) focus[4]);
+    }
+
+    @Override protected void onWindowVisibilityChanged(int visibility) {
+        super.onWindowVisibilityChanged(visibility);
+        // Window changes are delivered even when the map card itself is GONE.
+        if (visibility == VISIBLE && pulseAnimator != null) updateMapCredential();
+        else updatePulse();
     }
 
     @Override
     protected void onDetachedFromWindow() {
+        loadTilesInForeground = false;
+        OsmMapAccess.unobserve(this);
         pulseAnimator.cancel();
         // 释放瓦片下载线程，避免 Activity 重建时线程泄漏
         tileExecutor.shutdownNow();
@@ -656,7 +722,8 @@ final class MapView extends View {
     }
 
     private void requestTile(int z, int x, int y) {
-        if (!PrivacyNotice.locationAllowed()) return;
+        if (!PrivacyNotice.locationAllowed() || !loadTilesInForeground) return;
+        if ("osm".equals(activeProvider) && !OsmMapAccess.available()) return;
         int world = 1 << z;
         if (y < 0 || y >= world || tileExecutor.isShutdown()) return;
         x = ((x % world) + world) % world;
@@ -671,7 +738,11 @@ final class MapView extends View {
                 pendingTiles.add(key);
                 final int tileX = x;
                 final int tileY = y;
-                tileExecutor.execute(() -> loadTile(z, tileX, tileY, key, file, provider));
+                try {
+                    tileExecutor.execute(() -> loadTile(z, tileX, tileY, key, file, provider));
+                } catch (java.util.concurrent.RejectedExecutionException ignored) {
+                    pendingTiles.remove(key);
+                }
             }
         }
     }
@@ -693,10 +764,12 @@ final class MapView extends View {
     }
 
     private void loadTile(int z, int x, int y, String key, File file, String provider) {
+        boolean attemptedNetwork = false;
         try {
             // Discard queued work for old zoom levels/providers before disk/network I/O.
-            if (z != zoom || !provider.equals(activeProvider)
+            if (!loadTilesInForeground || z != zoom || !provider.equals(activeProvider)
                     || Thread.currentThread().isInterrupted()) return;
+            if ("osm".equals(provider) && !OsmMapAccess.available()) return;
             if (file.exists()) {
                 Bitmap disk = decodeTile(file);
                 if (disk != null) {
@@ -714,19 +787,28 @@ final class MapView extends View {
                 String domestic = "https://webrd0" + shard
                         + ".is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7"
                         + "&x=" + x + "&y=" + y + "&z=" + z;
+                attemptedNetwork = true;
                 if (downloadTile(domestic, file, key, "amap")) return;
                 // Keep the chosen provider. A transient failure must never switch
                 // the map, its coordinate system or its attribution to another source.
             } else {
                 String fallback = "https://tile.openstreetmap.org/"
                         + z + "/" + x + "/" + y + ".png";
-                downloadTile(fallback, file, key, "osm");
+                long generation = OsmMapAccess.generation();
+                attemptedNetwork = true;
+                boolean success = downloadTile(fallback, file, key, "osm");
+                // An abandoned viewport/provider is not evidence that OSM is unreachable.
+                if (provider.equals(activeProvider) && !Thread.currentThread().isInterrupted()) {
+                    OsmMapAccess.tileResult(generation, success);
+                }
             }
         } catch (Exception ignored) {
-            // 瓦片加载失败时保留空白底图，不打断使用
+            // The shared OSM availability gate collapses an unreachable map card.
         } finally {
-            if (!memoryCache.containsKey(key)) failedTiles.put(key,android.os.SystemClock.uptimeMillis()+30_000L);
-            else failedTiles.remove(key);
+            if (attemptedNetwork && provider.equals(activeProvider) && !Thread.currentThread().isInterrupted()) {
+                if (!memoryCache.containsKey(key)) failedTiles.put(key,android.os.SystemClock.uptimeMillis()+30_000L);
+                else failedTiles.remove(key);
+            }
             synchronized (pendingTiles) {
                 pendingTiles.remove(key);
             }
@@ -740,11 +822,11 @@ final class MapView extends View {
         Bitmap decoded = null;
         try {
             connection = (HttpURLConnection) new URL(url).openConnection();
-            connection.setConnectTimeout(6500);
-            connection.setReadTimeout(10000);
+            connection.setConnectTimeout("osm".equals(provider) ? 3000 : 6500);
+            connection.setReadTimeout("osm".equals(provider) ? 3000 : 10000);
             connection.setRequestProperty("User-Agent",
-                    "BashiDeHen/2.1.5 (Android; com.holi.prdbus)");
-            long deadline = BoundedStreams.deadlineAfter(20_000);
+                    "BashiDeHen/2.1.26 (+https://github.com/Holinality/bashi-dehen)");
+            long deadline = BoundedStreams.deadlineAfter("osm".equals(provider) ? 6000 : 20_000);
             int limit = 2 * 1024 * 1024;
             if (connection.getResponseCode() != 200 || connection.getContentLength() > limit) return false;
             File dir = file.getParentFile();

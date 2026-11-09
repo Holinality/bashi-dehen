@@ -390,6 +390,7 @@ public final class MainActivity extends ThemedActivity {
 
         android.widget.FrameLayout mapFrame = new android.widget.FrameLayout(this);
         mapView = new MapView(this);
+        mapView.setAvailabilityTarget(mapArea);
         mapView.setMapGestureListener(this::expandMap);
         // 点地图标记 = 点下方列表对应站点（相互对应）
         mapView.setStationTapListener(station -> {
@@ -521,7 +522,7 @@ public final class MainActivity extends ThemedActivity {
     private void collapseMap() { animateMapHeight(mapSmallHeight,false); }
     private void expandMap() { animateMapHeight(mapExpandedHeight,true); }
     private void animateMapHeight(int target,boolean expanded) {
-        if(mapArea==null||mapExpanded==expanded)return;
+        if(mapArea==null||mapArea.getVisibility()!=View.VISIBLE||mapExpanded==expanded)return;
         ViewGroup.LayoutParams params=mapArea.getLayoutParams();
         if(params==null||params.height==target){mapExpanded=expanded;return;}
         if(mapSizeAnimator!=null)mapSizeAnimator.cancel();
@@ -1750,9 +1751,6 @@ public final class MainActivity extends ThemedActivity {
             StringBuilder sb = new StringBuilder();
             sb.append(forward ? "▸ 往 " : "◂ 往 ").append(end)
                     .append("（首班 ").append(firstT).append(" · 末班 ").append(lastT).append("）");
-            if (!MetroTimes.validTime(firstT) || !MetroTimes.validTime(lastT)) {
-                sb.setLength(0); sb.append(forward ? "▸ 往 " : "◂ 往 ").append(end).append(" · 暂无时刻表");
-            }
             if (next != null) sb.append(" · 预计下一班 ").append(next);
             TextView dirText = new TextView(this);
             dirText.setText(sb.toString());

@@ -6,8 +6,8 @@ $Classes = Join-Path $BuildRoot 'classes'
 $Generated = Join-Path $BuildRoot 'generated'
 $Dex = Join-Path $BuildRoot 'dex'
 foreach ($Output in @($Classes, $Generated, $Dex)) { Clear-GeneratedDirectory $Output }
-$VersionName = Get-BuildSetting 'APP_VERSION_NAME' '2.1.25-source'
-$VersionCode = Get-BuildSetting 'APP_VERSION_CODE' '239'
+$VersionName = Get-BuildSetting 'APP_VERSION_NAME' '2.1.26-source'
+$VersionCode = Get-BuildSetting 'APP_VERSION_CODE' '240'
 $ApplicationId = Get-BuildSetting 'APP_APPLICATION_ID' 'com.holi.prdbus.opensource'
 if ($ApplicationId -notmatch '^[A-Za-z][A-Za-z0-9_]*(\.[A-Za-z][A-Za-z0-9_]*)+$') { throw 'Invalid APP_APPLICATION_ID.' }
 if ($VersionCode -notmatch '^[1-9][0-9]*$' -or $VersionName -notmatch '^[A-Za-z0-9][A-Za-z0-9._-]*$') { throw 'Invalid application version.' }

@@ -170,6 +170,7 @@ public final class LineDetailActivity extends ThemedActivity {
 
         lineMapFrame = new android.widget.FrameLayout(this);
         lineMap = new MapView(this);
+        lineMap.setAvailabilityTarget(lineMapFrame);
         lineMap.setBackground(Ui.edgeCard(this, PRIMARY, 20));
         lineMap.setClipToOutline(true);
         // MapView 自身不能高于兄弟控制层，否则 elevation 会让地图拦住按钮触摸。
@@ -287,7 +288,7 @@ public final class LineDetailActivity extends ThemedActivity {
     }
 
     private void animateLineMapHeight(int target, boolean expanded) {
-        if (lineMapFrame == null || lineMapExpanded == expanded) return;
+        if (lineMapFrame == null || lineMapFrame.getVisibility() != View.VISIBLE || lineMapExpanded == expanded) return;
         ViewGroup.LayoutParams params = lineMapFrame.getLayoutParams();
         if (params == null || params.height == target) {
             lineMapExpanded = expanded;
@@ -441,6 +442,7 @@ public final class LineDetailActivity extends ThemedActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        if (lineMap != null) lineMap.updateMapCredential();
         if (currentDetail != null) load(true);
         timerHandler.removeCallbacks(timerTask);
         timerHandler.postDelayed(timerTask, 15_000L);
