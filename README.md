@@ -6,7 +6,7 @@
 
 ## 下载
 
-[下载 Android 安装包](https://bus.holinality.com/download)
+[GitHub 下载安装包](https://github.com/Holinality/bashi-dehen/releases/latest) · [备用下载](https://bus.holinality.com/download)
 
 日常使用直接下载安装包即可。仓库里的源码可以自己编译，默认使用独立包名和签名，能和正式版同时安装。
 
