@@ -100,7 +100,6 @@ public final class ChelaileDataSource {
         HEADERS.put("Sec-Fetch-Site", "cross-site");
         HEADERS.put("Sec-Fetch-Mode", "cors");
         HEADERS.put("Sec-Fetch-Dest", "empty");
-        HEADERS.put("Referer", "https://servicewechat.com/wx71d589ea01ce3321/814/page-frame.html");
         HEADERS.put("Accept-Language", "zh-CN,zh;q=0.9");
         // 强制服务器返回明文（不做 gzip/br 压缩，避免 Android 端解压问题）
         HEADERS.put("Accept-Encoding", "identity");

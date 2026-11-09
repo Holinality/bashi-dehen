@@ -14,6 +14,7 @@ rules = [
     ('private-key material', re.compile(rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')),
     ('GitHub credential', re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{35,})')),
     ('embedded website credential', re.compile(rb'GZ_(?:KEY|AUTH)\s*=\s*[\"\x27][^\"\x27\r\n]{12,}')),
+    ('embedded WeChat App ID', re.compile(rb'\bwx[0-9a-fA-F]{16}\b')),
 ]
 issues = []
 for path in paths:
