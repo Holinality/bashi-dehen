@@ -1,0 +1,30 @@
+[
+  {
+    "area": "BEIJING",
+    "verifiedNamedOSMStations": 524,
+    "OSMIntervals": 499,
+    "removedUnverifiedStations": 2,
+    "missingIntervals": 2
+  },
+  {
+    "area": "GUANGFO",
+    "verifiedNamedOSMStations": 449,
+    "OSMIntervals": 424,
+    "removedUnverifiedStations": 4,
+    "missingIntervals": 7
+  },
+  {
+    "area": "SHANGHAI",
+    "verifiedNamedOSMStations": 531,
+    "OSMIntervals": 515,
+    "removedUnverifiedStations": 1,
+    "missingIntervals": 3
+  },
+  {
+    "area": "SHENZHEN",
+    "verifiedNamedOSMStations": 432,
+    "OSMIntervals": 416,
+    "removedUnverifiedStations": 0,
+    "missingIntervals": 0
+  }
+]

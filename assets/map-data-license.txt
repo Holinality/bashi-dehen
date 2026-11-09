@@ -1,0 +1,22 @@
+Offline public rail database and geography:
+Copyright OpenStreetMap contributors.
+Data licence: Open Data Commons Open Database License (ODbL) 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+
+The OSM-derived JSON assets are distributed as databases under ODbL, separately
+from the project's MIT-licensed Java code. Their derivatives must preserve the
+attribution and comply with the applicable ODbL sharing obligations.
+
+Regional extracts: Geofabrik, https://download.geofabrik.de/asia/china.html
+Per-area background files preserve the source PBF URI, retrieval time and hash.
+Rail station evidence and source extract hashes: data/osm-station-provenance.json
+
+Public station coordinates are derived from named OSM nodes and OSM route-member
+track geometry. Unverified names and disconnected intervals are omitted.
+No operator timetable or live train position is supplied by this database.
+
+Official map images, precise traced operator drawings, AMap snapshots and
+unverified timetable/catalogue bundles are not included in this public source
+package. Their original authors' rights are not relicensed by this project.
+See docs/DATA_SOURCES.md for scope, omissions and local asset overlay rules.

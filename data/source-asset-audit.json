@@ -1,0 +1,764 @@
+[
+  {
+    "file": "hk-bus-catalog.json",
+    "sha256": "c8d7787d463ad68b759afd0e9ada4cee6120eab95e3b6bf71a294514fbfb51a9",
+    "bytes": 773358,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "hk-kmb-index.json",
+    "sha256": "162ea27715ecfd4fe6069215e6125724502d722ae2b4e60461d658bd2e65d3fd",
+    "bytes": 644234,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "jinshan-timetable-a.jpg",
+    "sha256": "5c3fe548eca413dd0ada15734769ea959619ad62fa37fbd56172fe3e1cc0aef0",
+    "bytes": 583926,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "jinshan-timetable-b.jpg",
+    "sha256": "38cc1fc2ec7b312b6fe58353cd9990b7be9ccd9b8a92016dc858a1b9c02df85b",
+    "bytes": 616891,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "map-data-license.txt",
+    "sha256": "dcddd7b175283d0f0dbf11bef2653931a7ff6c2441d4b6a128f01754eacf4a68",
+    "bytes": 1416,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-1100.json",
+    "sha256": "0a33451f7a0a2f4d5e1554a2dcdbd4fbe7ceb325274fe4aaa66342932a1b7364",
+    "bytes": 80894,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-1200.json",
+    "sha256": "8edff2776899c5e71932a6fabc45abf8284f621e77f1ccd221188a7e6d646003",
+    "bytes": 42816,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-1301.json",
+    "sha256": "068bc05f84e0cedfc8a2987c94baecf275baf2c27471925cc8ed467348b1545c",
+    "bytes": 9811,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-1401.json",
+    "sha256": "3476b9981a0022ae524f44aee0d7daa9238313cb8b37783603ba2833bfa9679e",
+    "bytes": 7745,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-1501.json",
+    "sha256": "910ee154f65f2efee64e79d10e5e6919738b21a7a27680617f6f7037f8e5fe46",
+    "bytes": 7293,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-2101.json",
+    "sha256": "5e0cca4db8dbf080e16ec308ad46b0e64e3988671b1d053fa8632bc7532d9906",
+    "bytes": 25269,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-2102.json",
+    "sha256": "cf7b61c6769ced355e72769fea2bda00bfd89d83627b8dc2131211283638607a",
+    "bytes": 17948,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-2201.json",
+    "sha256": "63d221b10743db14d46ebdfeb9bdf39e9b9d22005e88e57320dc9d236db838c9",
+    "bytes": 27419,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-2301.json",
+    "sha256": "3e4707c28fe2070158bf4a23e43c92a194d083b6e8f9d21a3816ca6cb2589b99",
+    "bytes": 5891,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3100.json",
+    "sha256": "7fd06d45655bf3dc5428acb1b11e5dd2b1e1b1467827d55f016aba2530e5e20e",
+    "bytes": 94698,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3201.json",
+    "sha256": "4a54edf58cf019996cd3ad4635983808f983265a06939740447a68e1579357b0",
+    "bytes": 49046,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3202.json",
+    "sha256": "fdd29e1b955212f3013d04fea73a7b75d5421b70ce0d8f2b57ff6f4ab69dec3f",
+    "bytes": 15830,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3203.json",
+    "sha256": "afa58f2cf7e09a2b9b731db18561321b8b8aa09cfbcb294e6f9cf4f8fda91e81",
+    "bytes": 12411,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3204.json",
+    "sha256": "01fdc633f8cf20036985e7f1ad03305f1d35d3a80d947776a08fb4720e19426d",
+    "bytes": 7209,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3205.json",
+    "sha256": "4bd627a674c64e3526baa77d826bb5c1ad03da0a79d2b821e662b66863d8de76",
+    "bytes": 42829,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3206.json",
+    "sha256": "70afa204b714f184fb98110d9c7e33787ca76581de9f6a3935442f64420cc928",
+    "bytes": 7143,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3301.json",
+    "sha256": "c433758e57ff4119596bd696bf1618e36f1d3c0b3b24ddddf9bf5de4c345b24c",
+    "bytes": 60980,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3302.json",
+    "sha256": "5a7b68451f9966f9fce4164d2751dc57babbbdffb9d06d6fe935564ba82b7c59",
+    "bytes": 33680,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3303.json",
+    "sha256": "c23d4c9c5cf564e0bf13934342bf1ba919ee7e1fb753df9f1a877c2e7a5bb707",
+    "bytes": 6147,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3306.json",
+    "sha256": "14593e6e7e2361ea58eb41a208374096ae6167d54079d856dfa9f84cb5a72c49",
+    "bytes": 7382,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3307.json",
+    "sha256": "b97c91d02c27a2895f2a0008080d15a5ca28b9ca6ddc36e8301bf6b4a3af35bd",
+    "bytes": 5243,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3310.json",
+    "sha256": "a0686df316a6d4b7e616ca8ef26b4882bdba20019ef1aa52b8eba21e2b0c8535",
+    "bytes": 2529,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3401.json",
+    "sha256": "37b8e7adac45d354a1d6d2a1501e838242b147d926e93b9d12e45b17a0ba4ae7",
+    "bytes": 33972,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3402.json",
+    "sha256": "7cee6b6eea87122e6a3f42f28951893cca17fc8cf3dab7d311cfa94534d9331c",
+    "bytes": 5993,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3411.json",
+    "sha256": "af7bc9903973572761d30967ccb94561ffd266131ad7fe89966c53fd8681357d",
+    "bytes": 1809,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3501.json",
+    "sha256": "a8b0fc36d4ec4a4e78f9c52b92d23110fcf10c51a0e5dd2cce28ece8091be0bf",
+    "bytes": 18963,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3502.json",
+    "sha256": "b06465617d777f2febabb64c1dc273bf8fc8a062d0940ef21eef4e1cc5727544",
+    "bytes": 16493,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3601.json",
+    "sha256": "e41a91232e1a53b971d10aee817a9264aa618e085436da4f0a779e19942313d0",
+    "bytes": 19465,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3701.json",
+    "sha256": "31c3c6d908f625f349247668e57f3e1a54b88c562f9646118aa7364ce9d82bb1",
+    "bytes": 22936,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-3702.json",
+    "sha256": "ac55d019f8264a7540a8756f747dc37deebb8addbeca457ff30b4c6c5b840cef",
+    "bytes": 31685,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4101.json",
+    "sha256": "0a092c2f35678ea50c9170d4146fde8f9f24e79066ff1424860a53b4e03c6597",
+    "bytes": 40660,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4103.json",
+    "sha256": "92679c8ee5b1aaeb928820bf597f0dfaa3be576a09c2fea8ced1f2c5cf7c79c3",
+    "bytes": 5507,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4110.json",
+    "sha256": "896f4c3b098dc1f73da8a019743d0ade3ad1c8b4c241210b66ebf3687765f4db",
+    "bytes": 4263,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4201.json",
+    "sha256": "b3c908597b23690e8c88693fd74530b93f10a6e2359aa068013c91bd6bd9cf2d",
+    "bytes": 55697,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4207.json",
+    "sha256": "294a8d89efb951419a45a1af4f3c3ac010803568745e289349346fd47092f30e",
+    "bytes": 3845,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4301.json",
+    "sha256": "319134885181042d75a95da2441b85a8c780232eb80564b68195f0928f1627d6",
+    "bytes": 27503,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4303.json",
+    "sha256": "7ef5c124e2a7cfdbaff77db8db65010529516cf0c69f65f252245cab4d6f4317",
+    "bytes": 5215,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4331.json",
+    "sha256": "aec6dee93e94f54d28c2c337a4a920d7839c09705e5f9e25608b90cdae625a38",
+    "bytes": 1020,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4401.json",
+    "sha256": "2978d0bae93c170bb8b2b7a04e28be7ed3cfa8c91190473f5e0f73328c47125c",
+    "bytes": 65020,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4403.json",
+    "sha256": "cc30533f468149b2ae4db903fae6139c5c4fae182571e883e589184c0b294deb",
+    "bytes": 68919,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4406.json",
+    "sha256": "f32b7f1af8b773b14ee0daee971ae7fe471ac7406b559c12705fc84576927eff",
+    "bytes": 19007,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4418.json",
+    "sha256": "27f24ac50b5b6f5fb8ceedb696f13734da1db2c34240b3d32a62ac398b9bb1bd",
+    "bytes": 985,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4419.json",
+    "sha256": "d855061d674020005cc0f96d84a7bdfab5f932f335ed4af56c87f002d734a967",
+    "bytes": 6263,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-4501.json",
+    "sha256": "da7d6552aa1a90215509ac1edf4e5670a9cccb5c2f7bf1961429cde0e0b91a92",
+    "bytes": 17168,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-5000.json",
+    "sha256": "470b21da71669217ae4edd358e1b03ed873b72493ca062a9e18122ec0f0258b5",
+    "bytes": 47677,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-5101.json",
+    "sha256": "1a01bcc1865972cc681e45af94502c74aa37286eb167acb9d86bca667dcf6ecb",
+    "bytes": 67683,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-5120.json",
+    "sha256": "cb865ccef89a4a48d3524d78fffb53c6eb9188168aad8c6b331f47fa96afb41f",
+    "bytes": 1495,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-5201.json",
+    "sha256": "a46b0c37df3bffa2ab62671f8f1096a0ef71f36768cb05bdf3bbb850b14221fc",
+    "bytes": 15925,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-5301.json",
+    "sha256": "9171729c1b2885fb5d1a9f8fae11790d5bc26d463e59834ef5ac9e86642e138a",
+    "bytes": 21766,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-6101.json",
+    "sha256": "0526c976413ac59e8751df4892b6567668aea8f0c965c44fd05d012baab711d7",
+    "bytes": 40733,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-6201.json",
+    "sha256": "c6e7f8373852dc9341b43cd04ca530136604b8832136a2eeb19b83517057886d",
+    "bytes": 4995,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-6501.json",
+    "sha256": "653b041b750494c7d43f2441c185127d0f0532beed39f7eed9c8883dc603d206",
+    "bytes": 3396,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-7101.json",
+    "sha256": "25f74fe2362773493d2f5763f35913aec8e8eb0850a8132c3d16053666557232",
+    "bytes": 21795,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-7102.json",
+    "sha256": "4832c4c8fa329c7ad9579b74a3e571dfd5cc6544f67e30187124ad71cd10da1b",
+    "bytes": 6305,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-7104.json",
+    "sha256": "7484e9d295c8eebeacc72a49edbf7b76d3bb3ae72653ce7c3125f73d0c3dfa6b",
+    "bytes": 2959,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-7106.json",
+    "sha256": "5646cb3bc456195b8452e63f603b9c9a07e716821f949101ceae1f4f1863c121",
+    "bytes": 4647,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-8100.json",
+    "sha256": "9f0c20fea5f65e374cf80ceaf3225eec93a737edeb256effb53032270b2ed653",
+    "bytes": 23971,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-bundled-8200.json",
+    "sha256": "16a6fc9a7e3d3d1fd9525986bf4e41c48eb792f53423ffbb4e63c3c2e7e65246",
+    "bytes": 3301,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-city-0.dat",
+    "sha256": "4629d5cbfd42726566f8c2290028253a51ef679360128d82fdcaecd37d1cce9e",
+    "bytes": 87222,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-city-1.dat",
+    "sha256": "58f4c484ebfbf9906233973105ad22cd0145e778eb46207f740c755792451415",
+    "bytes": 77586,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-city-2.dat",
+    "sha256": "d4345c90a9ef00192d2b0b4acbd3d1734f2b50a7b7b9a4111e5e49c1e46e868d",
+    "bytes": 9078,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-city-3.dat",
+    "sha256": "970035e6615888d5e4c362bd7e2821f8877a39fa25bf4d759c2d5b5ce0e2f380",
+    "bytes": 8232,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-diagrams.json",
+    "sha256": "f7939aabedf977d6c1a57010d9efe06feab76c5760d26c11c7b220fa7be100d6",
+    "bytes": 123059,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-districts-BEIJING.json",
+    "sha256": "7f1d54afe29a98617f6ea1b2b3052badd4c4376c7f8968eb8563942fb04cb52e",
+    "bytes": 586675,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "7f1d54afe29a98617f6ea1b2b3052badd4c4376c7f8968eb8563942fb04cb52e"
+  },
+  {
+    "file": "metro-districts-GUANGFO.json",
+    "sha256": "94b34fea66a093952635a83ff7c0526768f2bf130c0d40c4fbd693b93cd9d88b",
+    "bytes": 2023912,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "94b34fea66a093952635a83ff7c0526768f2bf130c0d40c4fbd693b93cd9d88b"
+  },
+  {
+    "file": "metro-districts-SHANGHAI.json",
+    "sha256": "f60a83305ab3a6384194d3c8465857d64c1f9b9f91913ad562ee48b3c8dd8c20",
+    "bytes": 758421,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "f60a83305ab3a6384194d3c8465857d64c1f9b9f91913ad562ee48b3c8dd8c20"
+  },
+  {
+    "file": "metro-districts-SHENZHEN.json",
+    "sha256": "1b79debe70146cb6e398e6b00f01530f3961895c80598e1686666c4cd55efc85",
+    "bytes": 1177613,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "1b79debe70146cb6e398e6b00f01530f3961895c80598e1686666c4cd55efc85"
+  },
+  {
+    "file": "metro-geography-BEIJING.json",
+    "sha256": "854129d0d796891332a42c3bcc8432b27ea233ecf671d2f5dbf00d92534f34ad",
+    "bytes": 228252,
+    "publicCopy": true,
+    "reason": "Rebuilt from original named OSM station nodes and OSM route-member ways; no external-coordinate fallback",
+    "publicMode": "derived_from_raw_OSM_named_nodes",
+    "publicSHA256": "c79a5b3928daa8d6bf764b6c406195b40838cd0851c903931bcf3c83ad88d2d3"
+  },
+  {
+    "file": "metro-geography-GUANGFO.json",
+    "sha256": "a9e77c4e2c24f89b04c5b84ec7daffdd57efad237095735c49e2f2f4ac3dac52",
+    "bytes": 504191,
+    "publicCopy": true,
+    "reason": "Rebuilt from original named OSM station nodes and OSM route-member ways; no external-coordinate fallback",
+    "publicMode": "derived_from_raw_OSM_named_nodes",
+    "publicSHA256": "82b6889da527f4902726d77ea081ce0e2ce039c7ced57f2dabeaa6929bba27df"
+  },
+  {
+    "file": "metro-geography-SHANGHAI.json",
+    "sha256": "a5889270f8043a480e1d79459b49930385f5d9b79cea87ca7489181174bc0e04",
+    "bytes": 263645,
+    "publicCopy": true,
+    "reason": "Rebuilt from original named OSM station nodes and OSM route-member ways; no external-coordinate fallback",
+    "publicMode": "derived_from_raw_OSM_named_nodes",
+    "publicSHA256": "1e0bc4ac4f24ade43a449e8725a2854dc0010ee3218201db7eb4996b7920226a"
+  },
+  {
+    "file": "metro-geography-SHENZHEN.json",
+    "sha256": "a6f33efba260c2077d468329ecfea8dbf58dd5815abb2759617f07fb97e0c97d",
+    "bytes": 219551,
+    "publicCopy": true,
+    "reason": "Rebuilt from original named OSM station nodes and OSM route-member ways; no external-coordinate fallback",
+    "publicMode": "derived_from_raw_OSM_named_nodes",
+    "publicSHA256": "0755207325d5834d94339a9d77da668fa7209c90547f2840c4987be67e2b3664"
+  },
+  {
+    "file": "metro-guangfo-schematic.json",
+    "sha256": "dd08e0b4f24140e3a5c81a20f5ed5be4bbb9795b38f5ea41324b552d00635ce2",
+    "bytes": 56561,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-official-beijing.png",
+    "sha256": "079888ac23ddc8c7187347bbcd8d58634b8434ab66739830e0b8ec8caf849956",
+    "bytes": 466351,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-official-guangfo.jpg",
+    "sha256": "507edb57ca3d75a2e78569d1cd29c43a485c912a76e227c0ff58f5d9886ac859",
+    "bytes": 1847699,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-official-shenzhen.jpg",
+    "sha256": "ce5b0a87779020838e43c8da467e6b4cb01b6e194f8f7a1ef9bf01b215a76a44",
+    "bytes": 1445527,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro-topology.json",
+    "sha256": "9b7f216c8b539a505f0c6e71ba8d6e11f5253f96139b3ee173f152a9f7df429b",
+    "bytes": 71495,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "metro_data.json",
+    "sha256": "730df7bcb2327a79b19babe03849d06c02040b48baa59b3c25b2b4221c618b1d",
+    "bytes": 259694,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "mo-bus-catalog.json",
+    "sha256": "717fd7e939e586aaf4c4482b6efe5696d5f4bc1b946a04da15ccb48619d9cc14",
+    "bytes": 74533,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "official_gz_timetable.json",
+    "sha256": "fc4917baf432ea5853cce38650aa9c1f4849ae3b31fa66835a9b66fd14e784a4",
+    "bytes": 145909,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "official_sz_timetable.json",
+    "sha256": "c2706d0672ccff61e47bc1a336b68f1a57225791b1e2f60ba4ae3bc7d0d7edae",
+    "bytes": 465066,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "rail-map-gd-hd.jpg",
+    "sha256": "c55bb0e4fecb8b2fd947f4eeb6604a1e99d29210d7b0063ca9c3a0c80dcd7d18",
+    "bytes": 2672553,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "rail-map-gd-paths.json",
+    "sha256": "a43793e75e11d904f1ec1fdb44cf3498d55a909cf76408b18a257685fa65b20c",
+    "bytes": 8277,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "rail-map-gd-source.txt",
+    "sha256": "091149b31a6ced038627d86c4b8140cadb7cbdae40a81f46c396eb22756d8c09",
+    "bytes": 1662,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "rail-map-gd.jpg",
+    "sha256": "9c85fd07509621f96cdbbf642e9fdd80300c9acec026c123141770b3701aadec",
+    "bytes": 84738,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "rail-map-sh.jpg",
+    "sha256": "8ffb5b4cb00a28f8bd1ce5861e2700c9d7e404a98bbab756cff1b9a9dc259ea2",
+    "bytes": 1241934,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "raw_timetable.json",
+    "sha256": "26ebc4b07ad4e7f07ef09010d985334a5a0e0e02da859157eab8f9e20595ad60",
+    "bytes": 108414,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "regional-rail-locations.tsv",
+    "sha256": "1957c9c7925e45a5023dbbf3857550c938370429b27a9deda8292b29f18f55af",
+    "bytes": 1109,
+    "publicCopy": false,
+    "reason": "Not included: proprietary map artwork, AMap-derived snapshot, timetable or catalogue without verified redistribution terms",
+    "publicMode": "excluded"
+  },
+  {
+    "file": "regional-rail-telecodes.tsv",
+    "sha256": "b8f1ae5ae0f9eab86c0e356c23180b6726f04af70e65bfe71d74b2ee498e367a",
+    "bytes": 1299,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "b8f1ae5ae0f9eab86c0e356c23180b6726f04af70e65bfe71d74b2ee498e367a"
+  },
+  {
+    "file": "Trackr-LICENSE.txt",
+    "sha256": "c50c97f63f403a5b60662a1df0aa0160c611e09ec1b4a166cc1011d4cbc3dadd",
+    "bytes": 1100,
+    "publicCopy": true,
+    "reason": "ODbL map layer / MIT notice / factual identifiers",
+    "publicMode": "copied",
+    "publicSHA256": "c50c97f63f403a5b60662a1df0aa0160c611e09ec1b4a166cc1011d4cbc3dadd"
+  }
+]

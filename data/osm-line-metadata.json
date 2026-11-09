@@ -1,0 +1,531 @@
+{
+  "BEIJING": {
+    "北京S1线": {
+      "colour": "",
+      "osmRelations": [
+        8008814
+      ]
+    },
+    "北京1号线": {
+      "colour": "#A12830",
+      "osmRelations": [
+        1667139
+      ]
+    },
+    "北京2号线": {
+      "colour": "#00529B",
+      "osmRelations": [
+        1667236
+      ]
+    },
+    "北京3号线": {
+      "colour": "#D90627",
+      "osmRelations": [
+        18420549
+      ]
+    },
+    "北京4号线": {
+      "colour": "#008994",
+      "osmRelations": [
+        2083779
+      ]
+    },
+    "北京5号线": {
+      "colour": "#AE005F",
+      "osmRelations": [
+        1721064
+      ]
+    },
+    "北京6号线": {
+      "colour": "#BB8900",
+      "osmRelations": [
+        4625141
+      ]
+    },
+    "北京7号线": {
+      "colour": "#FFC66E",
+      "osmRelations": [
+        4623396
+      ]
+    },
+    "北京8号线": {
+      "colour": "#00997A",
+      "osmRelations": [
+        1721068
+      ]
+    },
+    "北京9号线": {
+      "colour": "#87D300",
+      "osmRelations": [
+        2063278
+      ]
+    },
+    "北京10号线": {
+      "colour": "#178ABB",
+      "osmRelations": [
+        1721075
+      ]
+    },
+    "北京11号线": {
+      "colour": "#ED796A",
+      "osmRelations": [
+        13623625
+      ]
+    },
+    "北京12号线": {
+      "colour": "#9B5A1A",
+      "osmRelations": [
+        18441518
+      ]
+    },
+    "北京13号线": {
+      "colour": "#F9E700",
+      "osmRelations": [
+        1667375
+      ]
+    },
+    "北京14号线": {
+      "colour": "#D4A7A1",
+      "osmRelations": [
+        4611276
+      ]
+    },
+    "北京15号线": {
+      "colour": "#653279",
+      "osmRelations": [
+        1350597
+      ]
+    },
+    "北京16号线": {
+      "colour": "#6DA843",
+      "osmRelations": [
+        7800400
+      ]
+    },
+    "北京17号线": {
+      "colour": "#00A9A9",
+      "osmRelations": [
+        13625144
+      ]
+    },
+    "北京18号线": {
+      "colour": "#5554A2",
+      "osmRelations": [
+        20010805
+      ]
+    },
+    "北京19号线": {
+      "colour": "#D6AAC1",
+      "osmRelations": [
+        13625325
+      ]
+    },
+    "北京昌平线": {
+      "colour": "#D47DAA",
+      "osmRelations": [
+        2111424
+      ]
+    },
+    "北京大兴机场线": {
+      "colour": "",
+      "osmRelations": [
+        10136948
+      ]
+    },
+    "北京房山线": {
+      "colour": "#D85F26",
+      "osmRelations": [
+        1721084
+      ]
+    },
+    "北京首都机场线": {
+      "colour": "#9B91B1",
+      "osmRelations": [
+        2062998
+      ]
+    },
+    "北京西郊线": {
+      "colour": "",
+      "osmRelations": [
+        8008876
+      ]
+    },
+    "北京燕房线": {
+      "colour": "",
+      "osmRelations": [
+        8469053
+      ]
+    },
+    "北京亦庄线": {
+      "colour": "#D61572",
+      "osmRelations": [
+        2201487
+      ]
+    }
+  },
+  "SHANGHAI": {
+    "上海1号线": {
+      "colour": "#E4002B",
+      "osmRelations": [
+        6800211
+      ]
+    },
+    "上海2号线": {
+      "colour": "#97D700",
+      "osmRelations": [
+        5611325
+      ]
+    },
+    "上海3号线": {
+      "colour": "#FFD100",
+      "osmRelations": [
+        196738
+      ]
+    },
+    "上海4号线": {
+      "colour": "#5F259F",
+      "osmRelations": [
+        7448423
+      ]
+    },
+    "上海5号线": {
+      "colour": "#AC4FC6",
+      "osmRelations": [
+        214779,
+        9170632
+      ]
+    },
+    "上海6号线": {
+      "colour": "#D9017A",
+      "osmRelations": [
+        214736
+      ]
+    },
+    "上海7号线": {
+      "colour": "#FF6900",
+      "osmRelations": [
+        6819599
+      ]
+    },
+    "上海8号线": {
+      "colour": "#009FDF",
+      "osmRelations": [
+        196737
+      ]
+    },
+    "上海9号线": {
+      "colour": "#71C5E8",
+      "osmRelations": [
+        214629
+      ]
+    },
+    "上海10号线": {
+      "colour": "#C1A7E2",
+      "osmRelations": [
+        199189,
+        7452117
+      ]
+    },
+    "上海11号线": {
+      "colour": "#76232F",
+      "osmRelations": [
+        5611109,
+        5611110
+      ]
+    },
+    "上海12号线": {
+      "colour": "#007B5F",
+      "osmRelations": [
+        5498699
+      ]
+    },
+    "上海13号线": {
+      "colour": "#EF95CF",
+      "osmRelations": [
+        7451888
+      ]
+    },
+    "上海14号线": {
+      "colour": "#827A04",
+      "osmRelations": [
+        10557250
+      ]
+    },
+    "上海15号线": {
+      "colour": "#BBA786",
+      "osmRelations": [
+        12231216
+      ]
+    },
+    "上海16号线": {
+      "colour": "#2CD5C4",
+      "osmRelations": [
+        6803856
+      ]
+    },
+    "上海17号线": {
+      "colour": "#C09C83",
+      "osmRelations": [
+        7845846
+      ]
+    },
+    "上海18号线": {
+      "colour": "#D6A461",
+      "osmRelations": [
+        10095916
+      ]
+    },
+    "上海磁浮线": {
+      "colour": "#97D700",
+      "osmRelations": [
+        5611325
+      ]
+    },
+    "上海浦江线": {
+      "colour": "#999999",
+      "osmRelations": [
+        8167020
+      ]
+    },
+    "上海市域机场线": {
+      "colour": "",
+      "osmRelations": [
+        18468815
+      ]
+    }
+  },
+  "GUANGFO": {
+    "广州1号线": {
+      "colour": "#F3D03E",
+      "osmRelations": [
+        7480670
+      ]
+    },
+    "广州2号线": {
+      "colour": "#00629B",
+      "osmRelations": [
+        7390450
+      ]
+    },
+    "广州3号线": {
+      "colour": "#ECA154",
+      "osmRelations": [
+        444000,
+        9841061
+      ]
+    },
+    "广州4号线": {
+      "colour": "#00843D",
+      "osmRelations": [
+        5454434
+      ]
+    },
+    "广州5号线": {
+      "colour": "#C5003E",
+      "osmRelations": [
+        7483883
+      ]
+    },
+    "广州6号线": {
+      "colour": "#80225F",
+      "osmRelations": [
+        7285816
+      ]
+    },
+    "广州7号线": {
+      "colour": "#97D700",
+      "osmRelations": [
+        7520751
+      ]
+    },
+    "广州8号线": {
+      "colour": "#008C95",
+      "osmRelations": [
+        7422204
+      ]
+    },
+    "广州9号线": {
+      "colour": "#71CC98",
+      "osmRelations": [
+        7935591
+      ]
+    },
+    "广州10号线": {
+      "colour": "#7389B2",
+      "osmRelations": [
+        19283541
+      ]
+    },
+    "广州11号线": {
+      "colour": "#FAC525",
+      "osmRelations": [
+        18132493
+      ]
+    },
+    "广州12号线": {
+      "colour": "#435428",
+      "osmRelations": [
+        19283546,
+        19283548
+      ]
+    },
+    "广州13号线": {
+      "colour": "#8E8C13",
+      "osmRelations": [
+        7895352
+      ]
+    },
+    "广州14号线": {
+      "colour": "#81312F",
+      "osmRelations": [
+        8338724
+      ]
+    },
+    "广州14号线支线": {
+      "colour": "#81312F",
+      "osmRelations": [
+        6728311
+      ]
+    },
+    "广州18号线": {
+      "colour": "#0047BA",
+      "osmRelations": [
+        13239401
+      ]
+    },
+    "广州21号线": {
+      "colour": "#201747",
+      "osmRelations": [
+        9171918
+      ]
+    },
+    "广州22号线": {
+      "colour": "#CD5228",
+      "osmRelations": [
+        13987999
+      ]
+    },
+    "广州APM线": {
+      "colour": "#00B5E2",
+      "osmRelations": [
+        1526269
+      ]
+    },
+    "广佛线": {
+      "colour": "#C4D600",
+      "osmRelations": [
+        2646091
+      ]
+    },
+    "佛山2号线": {
+      "colour": "#C10230",
+      "osmRelations": [
+        13604445
+      ]
+    },
+    "佛山3号线": {
+      "colour": "#002F87",
+      "osmRelations": [
+        15054271
+      ]
+    }
+  },
+  "SHENZHEN": {
+    "深圳1号线": {
+      "colour": "#00AB39",
+      "osmRelations": [
+        2287554
+      ]
+    },
+    "深圳2/8号线": {
+      "colour": "#DB6D1C",
+      "osmRelations": [
+        13176925
+      ]
+    },
+    "深圳3号线": {
+      "colour": "#00A2E1",
+      "osmRelations": [
+        9629886
+      ]
+    },
+    "深圳4号线": {
+      "colour": "#DC241F",
+      "osmRelations": [
+        2287563
+      ]
+    },
+    "深圳5号线": {
+      "colour": "#9950B2",
+      "osmRelations": [
+        9645951
+      ]
+    },
+    "深圳6号线": {
+      "colour": "#3ABCA8",
+      "osmRelations": [
+        11583141
+      ]
+    },
+    "深圳6号线支线": {
+      "colour": "#428D89",
+      "osmRelations": [
+        14953715
+      ]
+    },
+    "深圳7号线": {
+      "colour": "#0035AD",
+      "osmRelations": [
+        9629865
+      ]
+    },
+    "深圳9号线": {
+      "colour": "#846E74",
+      "osmRelations": [
+        9699771
+      ]
+    },
+    "深圳10号线": {
+      "colour": "#F8779E",
+      "osmRelations": [
+        11583538
+      ]
+    },
+    "深圳11号线": {
+      "colour": "#6A1D44",
+      "osmRelations": [
+        6450277
+      ]
+    },
+    "深圳12号线": {
+      "colour": "#A192B2",
+      "osmRelations": [
+        14944727
+      ]
+    },
+    "深圳13号线": {
+      "colour": "#DE7C00",
+      "osmRelations": [
+        18470804
+      ]
+    },
+    "深圳14号线": {
+      "colour": "#F2C75C",
+      "osmRelations": [
+        14752075
+      ]
+    },
+    "深圳16号线": {
+      "colour": "#1E22AA",
+      "osmRelations": [
+        15059916
+      ]
+    },
+    "深圳20号线": {
+      "colour": "#88DBDF",
+      "osmRelations": [
+        13620409
+      ]
+    }
+  }
+}

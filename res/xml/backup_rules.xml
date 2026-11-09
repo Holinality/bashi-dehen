@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="sharedpref" path="app_settings.xml" />
+    <exclude domain="sharedpref" path="prdbus_location.xml" />
+    <exclude domain="sharedpref" path="primary_navigation.xml" />
+    <exclude domain="sharedpref" path="prdbus_transit.xml" />
+    <exclude domain="sharedpref" path="prdbus.xml" />
+    <exclude domain="sharedpref" path="privacy_notice.xml" />
+</full-backup-content>

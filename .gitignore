@@ -1,0 +1,44 @@
+# Reproducible compiler output, local diagnostics and downloaded binaries
+build/
+**/build/
+out/
+*.apk
+*.aab
+*.ap_
+*.aar
+*.class
+*.dex
+*.log
+*.download
+
+# Private SDK configuration, signing material, credentials and data overlays
+local.properties
+local.properties.*
+!local.properties.example
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*.cer
+*.cookies
+*cookie-jar*
+.private/
+.private-assets/
+assets-local/
+secrets/
+private/
+
+# Editor / machine state
+.idea/
+.vscode/
+.gradle/
+.kotlin/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini

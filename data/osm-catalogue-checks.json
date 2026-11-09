@@ -1,0 +1,690 @@
+[
+  {
+    "area": "BEIJING",
+    "line": "北京10号线",
+    "segments": 1,
+    "intervals": 45,
+    "stationRows": 45,
+    "connectedStations": 45
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京11号线",
+    "segments": 1,
+    "intervals": 3,
+    "stationRows": 4,
+    "connectedStations": 4
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京12号线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京13号线",
+    "segments": 1,
+    "intervals": 16,
+    "stationRows": 17,
+    "connectedStations": 17
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京14号线",
+    "segments": 1,
+    "intervals": 32,
+    "stationRows": 33,
+    "connectedStations": 33
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京15号线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京16号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京17号线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京18号线",
+    "segments": 1,
+    "intervals": 10,
+    "stationRows": 11,
+    "connectedStations": 11
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京19号线",
+    "segments": 1,
+    "intervals": 9,
+    "stationRows": 10,
+    "connectedStations": 10
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京1号线",
+    "segments": 1,
+    "intervals": 34,
+    "stationRows": 35,
+    "connectedStations": 35
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京2号线",
+    "segments": 1,
+    "intervals": 18,
+    "stationRows": 18,
+    "connectedStations": 18
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京3号线",
+    "segments": 1,
+    "intervals": 9,
+    "stationRows": 10,
+    "connectedStations": 10
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京4号线",
+    "segments": 1,
+    "intervals": 34,
+    "stationRows": 35,
+    "connectedStations": 35
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京5号线",
+    "segments": 1,
+    "intervals": 22,
+    "stationRows": 23,
+    "connectedStations": 23
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京6号线",
+    "segments": 1,
+    "intervals": 35,
+    "stationRows": 36,
+    "connectedStations": 36
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京7号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京8号线",
+    "segments": 1,
+    "intervals": 34,
+    "stationRows": 35,
+    "connectedStations": 35
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京9号线",
+    "segments": 1,
+    "intervals": 12,
+    "stationRows": 13,
+    "connectedStations": 13
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京S1线",
+    "segments": 1,
+    "intervals": 7,
+    "stationRows": 8,
+    "connectedStations": 8
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京亦庄线",
+    "segments": 1,
+    "intervals": 13,
+    "stationRows": 14,
+    "connectedStations": 14
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京大兴机场线",
+    "segments": 1,
+    "intervals": 2,
+    "stationRows": 3,
+    "connectedStations": 3
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京房山线",
+    "segments": 1,
+    "intervals": 15,
+    "stationRows": 16,
+    "connectedStations": 16
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京昌平线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京燕房线",
+    "segments": 1,
+    "intervals": 8,
+    "stationRows": 9,
+    "connectedStations": 9
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京西郊线",
+    "segments": 1,
+    "intervals": 5,
+    "stationRows": 6,
+    "connectedStations": 6
+  },
+  {
+    "area": "BEIJING",
+    "line": "北京首都机场线",
+    "segments": 1,
+    "intervals": 2,
+    "stationRows": 3,
+    "connectedStations": 3
+  },
+  {
+    "area": "GUANGFO",
+    "line": "佛山2号线",
+    "segments": 1,
+    "intervals": 16,
+    "stationRows": 17,
+    "connectedStations": 17
+  },
+  {
+    "area": "GUANGFO",
+    "line": "佛山3号线",
+    "segments": 2,
+    "intervals": 33,
+    "stationRows": 35,
+    "connectedStations": 35
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广佛线",
+    "segments": 2,
+    "intervals": 22,
+    "stationRows": 24,
+    "connectedStations": 24
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州10号线",
+    "segments": 1,
+    "intervals": 11,
+    "stationRows": 12,
+    "connectedStations": 12
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州11号线",
+    "segments": 1,
+    "intervals": 30,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州12号线",
+    "segments": 2,
+    "intervals": 16,
+    "stationRows": 18,
+    "connectedStations": 18
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州13号线",
+    "segments": 1,
+    "intervals": 14,
+    "stationRows": 15,
+    "connectedStations": 15
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州14号线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州14号线支线",
+    "segments": 1,
+    "intervals": 9,
+    "stationRows": 10,
+    "connectedStations": 10
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州18号线",
+    "segments": 1,
+    "intervals": 7,
+    "stationRows": 8,
+    "connectedStations": 8
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州1号线",
+    "segments": 1,
+    "intervals": 15,
+    "stationRows": 16,
+    "connectedStations": 16
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州21号线",
+    "segments": 1,
+    "intervals": 19,
+    "stationRows": 20,
+    "connectedStations": 20
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州22号线",
+    "segments": 1,
+    "intervals": 7,
+    "stationRows": 8,
+    "connectedStations": 8
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州2号线",
+    "segments": 1,
+    "intervals": 23,
+    "stationRows": 24,
+    "connectedStations": 24
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州3号线",
+    "segments": 3,
+    "intervals": 32,
+    "stationRows": 33,
+    "connectedStations": 33
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州4号线",
+    "segments": 1,
+    "intervals": 22,
+    "stationRows": 23,
+    "connectedStations": 23
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州5号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州6号线",
+    "segments": 1,
+    "intervals": 31,
+    "stationRows": 32,
+    "connectedStations": 32
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州7号线",
+    "segments": 1,
+    "intervals": 26,
+    "stationRows": 27,
+    "connectedStations": 27
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州8号线",
+    "segments": 1,
+    "intervals": 27,
+    "stationRows": 28,
+    "connectedStations": 28
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州9号线",
+    "segments": 2,
+    "intervals": 8,
+    "stationRows": 10,
+    "connectedStations": 10
+  },
+  {
+    "area": "GUANGFO",
+    "line": "广州APM线",
+    "segments": 1,
+    "intervals": 8,
+    "stationRows": 9,
+    "connectedStations": 9
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海10号线",
+    "segments": 3,
+    "intervals": 36,
+    "stationRows": 37,
+    "connectedStations": 37
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海11号线",
+    "segments": 2,
+    "intervals": 38,
+    "stationRows": 40,
+    "connectedStations": 40
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海12号线",
+    "segments": 1,
+    "intervals": 31,
+    "stationRows": 32,
+    "connectedStations": 32
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海13号线",
+    "segments": 1,
+    "intervals": 30,
+    "stationRows": 31,
+    "connectedStations": 31
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海14号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海15号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海16号线",
+    "segments": 1,
+    "intervals": 12,
+    "stationRows": 13,
+    "connectedStations": 13
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海17号线",
+    "segments": 1,
+    "intervals": 13,
+    "stationRows": 14,
+    "connectedStations": 14
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海18号线",
+    "segments": 1,
+    "intervals": 30,
+    "stationRows": 31,
+    "connectedStations": 31
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海1号线",
+    "segments": 1,
+    "intervals": 27,
+    "stationRows": 28,
+    "connectedStations": 28
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海2号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海3号线",
+    "segments": 1,
+    "intervals": 28,
+    "stationRows": 29,
+    "connectedStations": 29
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海4号线",
+    "segments": 1,
+    "intervals": 26,
+    "stationRows": 26,
+    "connectedStations": 26
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海5号线",
+    "segments": 2,
+    "intervals": 17,
+    "stationRows": 19,
+    "connectedStations": 19
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海6号线",
+    "segments": 1,
+    "intervals": 27,
+    "stationRows": 28,
+    "connectedStations": 28
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海7号线",
+    "segments": 1,
+    "intervals": 32,
+    "stationRows": 33,
+    "connectedStations": 33
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海8号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海9号线",
+    "segments": 1,
+    "intervals": 34,
+    "stationRows": 35,
+    "connectedStations": 35
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海市域机场线",
+    "segments": 1,
+    "intervals": 6,
+    "stationRows": 7,
+    "connectedStations": 7
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海浦江线",
+    "segments": 1,
+    "intervals": 5,
+    "stationRows": 6,
+    "connectedStations": 6
+  },
+  {
+    "area": "SHANGHAI",
+    "line": "上海磁浮线",
+    "segments": 1,
+    "intervals": 1,
+    "stationRows": 2,
+    "connectedStations": 2
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳10号线",
+    "segments": 1,
+    "intervals": 23,
+    "stationRows": 24,
+    "connectedStations": 24
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳11号线",
+    "segments": 1,
+    "intervals": 21,
+    "stationRows": 22,
+    "connectedStations": 22
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳12号线",
+    "segments": 1,
+    "intervals": 38,
+    "stationRows": 39,
+    "connectedStations": 39
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳13号线",
+    "segments": 1,
+    "intervals": 25,
+    "stationRows": 26,
+    "connectedStations": 26
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳14号线",
+    "segments": 1,
+    "intervals": 17,
+    "stationRows": 18,
+    "connectedStations": 18
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳16号线",
+    "segments": 1,
+    "intervals": 31,
+    "stationRows": 32,
+    "connectedStations": 32
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳1号线",
+    "segments": 1,
+    "intervals": 29,
+    "stationRows": 30,
+    "connectedStations": 30
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳2/8号线",
+    "segments": 1,
+    "intervals": 42,
+    "stationRows": 43,
+    "connectedStations": 43
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳20号线",
+    "segments": 1,
+    "intervals": 4,
+    "stationRows": 5,
+    "connectedStations": 5
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳3号线",
+    "segments": 1,
+    "intervals": 37,
+    "stationRows": 38,
+    "connectedStations": 38
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳4号线",
+    "segments": 1,
+    "intervals": 22,
+    "stationRows": 23,
+    "connectedStations": 23
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳5号线",
+    "segments": 1,
+    "intervals": 36,
+    "stationRows": 37,
+    "connectedStations": 37
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳6号线",
+    "segments": 1,
+    "intervals": 26,
+    "stationRows": 27,
+    "connectedStations": 27
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳6号线支线",
+    "segments": 1,
+    "intervals": 6,
+    "stationRows": 7,
+    "connectedStations": 7
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳7号线",
+    "segments": 1,
+    "intervals": 28,
+    "stationRows": 29,
+    "connectedStations": 29
+  },
+  {
+    "area": "SHENZHEN",
+    "line": "深圳9号线",
+    "segments": 1,
+    "intervals": 31,
+    "stationRows": 32,
+    "connectedStations": 32
+  }
+]

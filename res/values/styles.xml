@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/edgeBackground</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/edgeBackground</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorControlHighlight">#202466A8</item>
+        <item name="android:editTextColor">#25364A</item>
+        <item name="android:textColorHint">#506477</item>
+        <item name="android:buttonStyle">@style/TransitButton</item>
+    </style>
+    <style name="AppThemeDark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#101824</item>
+        <item name="android:colorAccent">#91BFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">#192639</item>
+        <item name="android:editTextColor">#E7EFFA</item>
+        <item name="android:textColorHint">#B1C4DC</item>
+        <item name="android:buttonStyle">@style/TransitButton</item>
+    </style>
+    <style name="TransitButton" parent="android:Widget.Material.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>
