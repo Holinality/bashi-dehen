@@ -49,7 +49,7 @@ if ($ReleaseSigning) {
     $KeyPassword = 'android'
     $KeyAlias = 'androiddebugkey'
     if (-not (Test-Path -LiteralPath $StoreFile -PathType Leaf)) {
-        & $Keytool -J-Duser.language=en -J-Duser.country=US -genkeypair -noprompt -keystore $StoreFile -storetype PKCS12 -storepass android -keypass android -alias $KeyAlias -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US'
+        & $Keytool '-J-Duser.language=en' '-J-Duser.country=US' -genkeypair -noprompt -keystore $StoreFile -storetype PKCS12 -storepass android -keypass android -alias $KeyAlias -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Android Debug,O=Android,C=US'
         Assert-BuildExit 'Debug keystore generation'
     }
 }
