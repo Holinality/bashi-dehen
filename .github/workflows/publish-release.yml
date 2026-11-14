@@ -1,18 +1,18 @@
-name: Publish verified 2.1.29 APKs
+name: Publish verified 2.1.30 APKs
 
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/publish-release.yml'
-      - 'docs/releases/2.1.29.md'
+      - 'docs/releases/2.1.30.md'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: publish-v2.1.29
+  group: publish-v2.1.30
   cancel-in-progress: false
 
 jobs:
@@ -33,18 +33,18 @@ jobs:
           mkdir release-assets
           cd release-assets
           curl --fail --location --retry 3 --connect-timeout 20 --max-time 240 --proto '=https' --proto-redir '=https' --tlsv1.2 \
-            --output prdbus-2.1.29-r243-signed.apk \
-            https://bus.holinality.com/prdbus/prdbus-2.1.29-r243-signed.apk
+            --output prdbus-2.1.30-r244-signed.apk \
+            https://bus.holinality.com/prdbus/prdbus-2.1.30-r244-signed.apk
           curl --fail --location --retry 3 --connect-timeout 20 --max-time 240 --proto '=https' --proto-redir '=https' --tlsv1.2 \
-            --output prdbus-2.1.29-r243-clean-install-signed.apk \
-            https://bus.holinality.com/prdbus/prdbus-2.1.29-r243-clean-install-signed.apk
+            --output prdbus-2.1.30-r244-clean-install-signed.apk \
+            https://bus.holinality.com/prdbus/prdbus-2.1.30-r244-clean-install-signed.apk
           cat > SHA256SUMS.txt <<'CHECKSUMS'
-          6e6dd524197c7ecb75ae7973964e34c4aa4d14b0cb49b7e10b6916994d4231fd  prdbus-2.1.29-r243-signed.apk
-          935428b0af1abe33bd761783467d4c4db300467e9af78a40732dc07e3bae6a58  prdbus-2.1.29-r243-clean-install-signed.apk
+          6d0a6546e4d88b749e9ea105476244cc97b5f0786dc2185c4086cc496366c521  prdbus-2.1.30-r244-signed.apk
+          d4ad43ce376aaf7d5c85b17f61ac1b7d7346f7cdf4f4ef7e12f0d9386896da17  prdbus-2.1.30-r244-clean-install-signed.apk
           CHECKSUMS
           sha256sum --check SHA256SUMS.txt
-          test "$(stat -c %s prdbus-2.1.29-r243-signed.apk)" = 12624187
-          test "$(stat -c %s prdbus-2.1.29-r243-clean-install-signed.apk)" = 12624187
+          test "$(stat -c %s prdbus-2.1.30-r244-signed.apk)" = 13029674
+          test "$(stat -c %s prdbus-2.1.30-r244-clean-install-signed.apk)" = 13029674
       - name: Create a draft, verify uploaded files, then publish
         shell: bash
         env:
@@ -57,7 +57,7 @@ jobs:
           import urllib.error
           import urllib.request
           base = 'https://api.github.com/repos/Holinality/bashi-dehen/'
-          for path in ('releases/tags/v2.1.29', 'git/ref/tags/v2.1.29'):
+          for path in ('releases/tags/v2.1.30', 'git/ref/tags/v2.1.30'):
               request = urllib.request.Request(base + path, headers={
                   'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
                   'Accept': 'application/vnd.github+json',
@@ -66,36 +66,36 @@ jobs:
               })
               try:
                   with urllib.request.urlopen(request, timeout=30):
-                      raise SystemExit('Tag or release v2.1.29 already exists; stopping without changes.')
+                      raise SystemExit('Tag or release v2.1.30 already exists; stopping without changes.')
               except urllib.error.HTTPError as error:
                   if error.code != 404:
                       raise
           PY
-          gh release create v2.1.29 --repo Holinality/bashi-dehen \
-            --target "$GITHUB_SHA" --title '巴士得很 2.1.29' \
-            --notes-file docs/releases/2.1.29.md --draft
-          gh release upload v2.1.29 --repo Holinality/bashi-dehen \
-            release-assets/prdbus-2.1.29-r243-signed.apk \
-            release-assets/prdbus-2.1.29-r243-clean-install-signed.apk \
+          gh release create v2.1.30 --repo Holinality/bashi-dehen \
+            --target "$GITHUB_SHA" --title '巴士得很 2.1.30' \
+            --notes-file docs/releases/2.1.30.md --draft
+          gh release upload v2.1.30 --repo Holinality/bashi-dehen \
+            release-assets/prdbus-2.1.30-r244-signed.apk \
+            release-assets/prdbus-2.1.30-r244-clean-install-signed.apk \
             release-assets/SHA256SUMS.txt
-          gh release view v2.1.29 --repo Holinality/bashi-dehen --json assets,isDraft,tagName > release-assets/uploaded.json
+          gh release view v2.1.30 --repo Holinality/bashi-dehen --json assets,isDraft,tagName > release-assets/uploaded.json
           python3 - <<'PY'
           import json
           from pathlib import Path
           data = json.loads(Path('release-assets/uploaded.json').read_text())
           expected = {
-              'prdbus-2.1.29-r243-signed.apk': 12624187,
-              'prdbus-2.1.29-r243-clean-install-signed.apk': 12624187,
+              'prdbus-2.1.30-r244-signed.apk': 13029674,
+              'prdbus-2.1.30-r244-clean-install-signed.apk': 13029674,
               'SHA256SUMS.txt': Path('release-assets/SHA256SUMS.txt').stat().st_size,
           }
-          assert data['isDraft'] and data['tagName'] == 'v2.1.29', 'Unexpected release state'
+          assert data['isDraft'] and data['tagName'] == 'v2.1.30', 'Unexpected release state'
           assert {asset['name']: asset['size'] for asset in data['assets']} == expected, 'Unexpected uploaded assets'
           PY
           mkdir verify-assets
-          gh release download v2.1.29 --repo Holinality/bashi-dehen --dir verify-assets \
-            --pattern prdbus-2.1.29-r243-signed.apk \
-            --pattern prdbus-2.1.29-r243-clean-install-signed.apk \
+          gh release download v2.1.30 --repo Holinality/bashi-dehen --dir verify-assets \
+            --pattern prdbus-2.1.30-r244-signed.apk \
+            --pattern prdbus-2.1.30-r244-clean-install-signed.apk \
             --pattern SHA256SUMS.txt
           cmp release-assets/SHA256SUMS.txt verify-assets/SHA256SUMS.txt
           (cd verify-assets && sha256sum --check SHA256SUMS.txt)
-          gh release edit v2.1.29 --repo Holinality/bashi-dehen --draft=false --latest
+          gh release edit v2.1.30 --repo Holinality/bashi-dehen --draft=false --latest
